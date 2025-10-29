@@ -389,7 +389,7 @@ public class RNDataWedgeIntentsModule extends ReactContextBaseJavaModule impleme
                 }
             }
         }
-        this.reactContext.registerReceiver(genericReceiver, filter, ContextCompat.RECEIVER_EXPORTED);
+        this.reactContext.registerReceiver(genericReceiver, filter, RECEIVER_EXPORTED);
     }
 
     private void unregisterReceivers() {
