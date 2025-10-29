@@ -10,6 +10,7 @@ import android.net.Uri;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import androidx.core.content.ContextCompat
 import android.content.IntentFilter;
 import android.os.Bundle;
 import org.json.JSONObject;
@@ -389,7 +390,7 @@ public class RNDataWedgeIntentsModule extends ReactContextBaseJavaModule impleme
                 }
             }
         }
-        this.reactContext.registerReceiver(genericReceiver, filter, RECEIVER_EXPORTED);
+        this.reactContext.registerReceiver(genericReceiver, filter, ContextCompat.RECEIVER_EXPORTED);
     }
 
     private void unregisterReceivers() {
